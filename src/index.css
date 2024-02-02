@@ -34,7 +34,7 @@ p, h4 {
   font-family: monospace;
 }
 
-.ruleset {
+.ruleset, input {
   background-color: hsla(60, 56%, 91%, 0.7);
 }
 

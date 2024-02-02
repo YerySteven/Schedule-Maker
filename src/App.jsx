@@ -7,7 +7,9 @@ function App() {
   const [bodies, setBodies] = useState([]);
 
   const addHead = (newHeaderName) => {
-    setHeaders([...headers, <th key={headers.length}>{newHeaderName}</th>]);
+    if(headers.length < 7) {
+      setHeaders([...headers, <th key={headers.length}>{newHeaderName}</th>]);
+    }
   };
 
   const addBody = (newBodyName) => {
