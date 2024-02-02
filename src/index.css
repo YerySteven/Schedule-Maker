@@ -55,3 +55,7 @@ button:hover {
   gap: 20px;
   margin: 20px;
 }
+
+input {
+  font-family: 'AR One Sans', sans-serif;
+}

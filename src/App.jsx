@@ -20,8 +20,8 @@ function App() {
     <>
       <h1 className="title">Make Your Schedule</h1>
       <div className='buttons'>
-        <button onClick={() => addHead(<input type='text'/>)}>ADD DAYS</button>
-        <button onClick={() => addBody(<input type='text'/>)}>ADD TIME</button>
+        <button onClick={() => addHead(<input type='text' placeholder='name the day...' name='day'/>)}>ADD DAYS</button>
+        <button onClick={() => addBody(<input type='text' placeholder='type the time...' name='time'/>)}>ADD TIME</button>
       </div>
       <Table headers={headers}  bodies={bodies}/>
     </>
