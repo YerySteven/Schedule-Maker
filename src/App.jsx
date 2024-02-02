@@ -8,12 +8,19 @@ function App() {
 
   const addHead = (newHeaderName) => {
     if(headers.length < 7) {
-      setHeaders([...headers, <th key={headers.length}>{newHeaderName}</th>]);
+      setHeaders([...headers, 
+      <th key={headers.length}>
+        {newHeaderName}
+      </th>]);
     }
   };
 
   const addBody = (newBodyName) => {
-    setBodies([...bodies, <tr key={headers.length}>{newBodyName}</tr>]);
+    setBodies([...bodies, 
+      <tr key={headers.length}>
+        {newBodyName}
+        <td><input type='text' placeholder='add activiy'/></td>
+      </tr>]);
   }
 
   return (
